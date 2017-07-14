@@ -44,6 +44,8 @@ public enum PresentationType {
             return (width, height)
         case .dynamic:
             return nil
+        default:
+            return nil
         }
     }
 
