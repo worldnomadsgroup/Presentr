@@ -258,7 +258,7 @@ extension AlertViewController {
         #endif
         */
         
-        let font = CGFont(provider)
+        guard let font = CGFont(provider) else { return false }
 
         var error: Unmanaged<CFError>?
 
